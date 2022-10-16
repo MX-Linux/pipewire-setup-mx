@@ -2,12 +2,17 @@
 
 set -e
 
-if [ "$1" = "purge" | "$1" = "remove"] ; then
+case "$1" in
+  purge|remove)
   if [ -x /etc/init.d/pulseaudio-enable-autospawn ]; then
   	if [ -x /usr/sbin/update-rc.d ]; then
     	update-rc.d /etc/init.d/pulseaudio-enable-autospawn defaults >/dev/null 2>&1
   	fi
   fi
-fi
+  
+  ;;
+  *) exit 0
+esac
+
 
 exit 0
