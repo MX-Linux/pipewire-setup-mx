@@ -1,3 +1,9 @@
+pipewire-setup-mx (22.10.02) mx; urgency=medium
+
+  * add a provides pulseaudio to test removal of pulseaudio
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 16 Oct 2022 10:06:25 -0400
+
 pipewire-setup-mx (22.10.01) mx; urgency=medium
 
   * Initial release. 
