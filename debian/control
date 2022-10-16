@@ -1,0 +1,12 @@
+Source: pipewire-setup-mx
+Section: system
+Priority: optional
+Maintainer: Dolphin Oracle <dolphinoracle@gmail.com>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.8
+
+Package: pipewire-setup-mx
+Architecture: all
+Depends: pipewire (>=0.3.58), pipewire-alsa, pipewire-pulse, gstreamer1.0-pipewire, wireplumber, libspa-0.2-bluetooth
+Conflicts: pulseaudio-modules-bluethooth
+Description:  pipewire setup for sysVinit and/or systemd

@@ -1,2 +1,3 @@
-# pipewire-setup-mx
-pipewire setup for sysVinit and systemd for MX
+# network-manager-sysvinit-compat
+
+sysvinit script for network-manager

@@ -1,0 +1,11 @@
+#! /bin/sh
+
+set -e
+
+if [ -x /etc/init.d/pulseaudio-enable-autospawn ]; then
+  if [ -x /usr/sbin/update-rc.d ]; then
+    update-rc.d /etc/init.d/pulseaudio-enable-autospawn remove >/dev/null 2>&1
+  fi
+fi
+
+exit 0

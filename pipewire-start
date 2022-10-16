@@ -1,0 +1,13 @@
+#/bin/bash
+
+INITCHECK=$(ps -p 1 -o cmd -h)
+
+if [ "$INITCHECK" = "/lib/systemd/systemd" ]; then 
+	exit 0
+fi
+#else start them up
+pipewire &
+pipewire-pulse &
+wireplumber &
+
+exit 0
