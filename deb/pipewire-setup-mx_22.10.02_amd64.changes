@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Sun, 16 Oct 2022 10:06:25 -0400
+Source: pipewire-setup-mx
+Binary: pipewire-setup-mx
+Architecture: source all
+Version: 22.10.02
+Distribution: mx
+Urgency: medium
+Maintainer: Dolphin Oracle <dolphinoracle@gmail.com>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ pipewire-setup-mx - pipewire setup for sysVinit and/or systemd
+Changes:
+ pipewire-setup-mx (22.10.02) mx; urgency=medium
+ .
+   * add a provides pulseaudio to test removal of pulseaudio
+Checksums-Sha1:
+ f0563b5f84fad7f29f7c8e3135b21183cd2fb283 584 pipewire-setup-mx_22.10.02.dsc
+ 31295250826df3b20e36667e7bcb9b5e51d3098e 12756 pipewire-setup-mx_22.10.02.tar.xz
+ f8708d030848d5d6e9402010f0f27965bf7ebde7 2188 pipewire-setup-mx_22.10.02_all.deb
+ 60cbefc72279716db7b391446be8461a85320ad8 5729 pipewire-setup-mx_22.10.02_amd64.buildinfo
+Checksums-Sha256:
+ 5d3167effa92c376cd7dd050f78fb330ff967d3cef0ce8a0c333f01c78cf7cab 584 pipewire-setup-mx_22.10.02.dsc
+ b2ac5aba7e9b5d255bd98ff6c32aa176f484980f708b8bb4963580435274e22c 12756 pipewire-setup-mx_22.10.02.tar.xz
+ beab20809773e7085dbd7ab1004022507fbefdb8d1b21867e3dea9206b3dc716 2188 pipewire-setup-mx_22.10.02_all.deb
+ d412a06bd3ec2f064b25e3fc2a49b4b42fcea8aae6f10847bb32dd73a0deccc5 5729 pipewire-setup-mx_22.10.02_amd64.buildinfo
+Files:
+ 3f6fc218364630dbc7aa14934496ba59 584 system optional pipewire-setup-mx_22.10.02.dsc
+ 9fa749b9c35822111bd42386f69a9a73 12756 system optional pipewire-setup-mx_22.10.02.tar.xz
+ d60bead7365a136f10c4f042ef2df7eb 2188 system optional pipewire-setup-mx_22.10.02_all.deb
+ 80723d5896d53e1cda4e238d9875a4a4 5729 system optional pipewire-setup-mx_22.10.02_amd64.buildinfo
