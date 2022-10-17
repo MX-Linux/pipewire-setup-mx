@@ -9,8 +9,8 @@ Build-Depends: debhelper (>= 9)
 Package-List:
  pipewire-setup-mx deb system optional arch=all
 Checksums-Sha1:
- a1fda0458bc1228df7f239105aac049c3e246857 12612 pipewire-setup-mx_22.10.03.tar.xz
+ bdb8e1c6c8ec69a7a3400a7c60fc40e28bae3eba 30332 pipewire-setup-mx_22.10.03.tar.xz
 Checksums-Sha256:
- df6a8213973de1bad76617101f0e684b51080e9cebd11ea8f85daa14bae236e6 12612 pipewire-setup-mx_22.10.03.tar.xz
+ 4cd6ab7ad8a73cdc26c729d7dade624ec8e5b82a78c67627300c10e743d38b25 30332 pipewire-setup-mx_22.10.03.tar.xz
 Files:
- 86ac1ee468addbd49b412f80c881c1df 12612 pipewire-setup-mx_22.10.03.tar.xz
+ b595487cbb465978e7c433adb47341e5 30332 pipewire-setup-mx_22.10.03.tar.xz
