@@ -1,6 +1,6 @@
  dpkg-buildpackage -us -uc -ui
 dpkg-buildpackage: info: source package pipewire-setup-mx
-dpkg-buildpackage: info: source version 22.10.02
+dpkg-buildpackage: info: source version 22.10.03
 dpkg-buildpackage: info: source distribution mx
 dpkg-buildpackage: info: source changed by Dolphin Oracle <dolphinoracle@gmail.com>
  dpkg-source --before-build .
@@ -10,8 +10,8 @@ dh clean
    dh_clean
  dpkg-source -b .
 dpkg-source: info: using source format '3.0 (native)'
-dpkg-source: info: building pipewire-setup-mx in pipewire-setup-mx_22.10.02.tar.xz
-dpkg-source: info: building pipewire-setup-mx in pipewire-setup-mx_22.10.02.dsc
+dpkg-source: info: building pipewire-setup-mx in pipewire-setup-mx_22.10.03.tar.xz
+dpkg-source: info: building pipewire-setup-mx in pipewire-setup-mx_22.10.03.dsc
  debian/rules build
 dh build 
    dh_update_autotools_config
@@ -34,23 +34,19 @@ dh binary
    dh_gencontrol
    dh_md5sums
    dh_builddeb
-dpkg-deb: building package 'pipewire-setup-mx' in '../pipewire-setup-mx_22.10.02_all.deb'.
+dpkg-deb: building package 'pipewire-setup-mx' in '../pipewire-setup-mx_22.10.03_all.deb'.
  dpkg-genbuildinfo
- dpkg-genchanges  >../pipewire-setup-mx_22.10.02_amd64.changes
+ dpkg-genchanges  >../pipewire-setup-mx_22.10.03_amd64.changes
 dpkg-genchanges: info: including full source code in upload
  dpkg-source --after-build .
 dpkg-buildpackage: info: full upload; Debian-native package (full source is included)
-Now running lintian pipewire-setup-mx_22.10.02_amd64.changes ...
+Now running lintian pipewire-setup-mx_22.10.03_amd64.changes ...
 E: pipewire-setup-mx changes: bad-distribution-in-changes-file mx
 E: pipewire-setup-mx: extended-description-is-empty
 E: pipewire-setup-mx: no-copyright-file
 W: pipewire-setup-mx source: ancient-standards-version 3.9.8 (released 2016-04-06) (current is 4.5.1)
-W: pipewire-setup-mx: command-with-path-in-maintainer-script postinst:6 /usr/sbin/update-rc.d
-W: pipewire-setup-mx: command-with-path-in-maintainer-script postrm:8 /usr/sbin/update-rc.d
 W: pipewire-setup-mx source: debhelper-but-no-misc-depends pipewire-setup-mx
 W: pipewire-setup-mx: executable-not-elf-or-script usr/bin/pipewire-start
-W: pipewire-setup-mx source: maintainer-script-lacks-debhelper-token debian/postinst
-W: pipewire-setup-mx source: maintainer-script-lacks-debhelper-token debian/postrm
 W: pipewire-setup-mx source: no-debian-copyright-in-source
 W: pipewire-setup-mx: no-manual-page usr/bin/pipewire-start
 W: pipewire-setup-mx source: package-needs-versioned-debhelper-build-depends 11

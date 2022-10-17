@@ -2,19 +2,19 @@ Format: 1.0
 Source: pipewire-setup-mx
 Binary: pipewire-setup-mx
 Architecture: all source
-Version: 22.10.02
+Version: 22.10.03
 Checksums-Md5:
- 3f6fc218364630dbc7aa14934496ba59 584 pipewire-setup-mx_22.10.02.dsc
- d60bead7365a136f10c4f042ef2df7eb 2188 pipewire-setup-mx_22.10.02_all.deb
+ 80b63cb28947e8d44d7681b34c7e4d1f 584 pipewire-setup-mx_22.10.03.dsc
+ 5d222032c8567f4f927f4ba95247a6a2 2028 pipewire-setup-mx_22.10.03_all.deb
 Checksums-Sha1:
- f0563b5f84fad7f29f7c8e3135b21183cd2fb283 584 pipewire-setup-mx_22.10.02.dsc
- f8708d030848d5d6e9402010f0f27965bf7ebde7 2188 pipewire-setup-mx_22.10.02_all.deb
+ f9dcad03c98e81a92e6030085ffbf9221a5a356a 584 pipewire-setup-mx_22.10.03.dsc
+ cd8d9fff6411eae039d3241761053e91371317ef 2028 pipewire-setup-mx_22.10.03_all.deb
 Checksums-Sha256:
- 5d3167effa92c376cd7dd050f78fb330ff967d3cef0ce8a0c333f01c78cf7cab 584 pipewire-setup-mx_22.10.02.dsc
- beab20809773e7085dbd7ab1004022507fbefdb8d1b21867e3dea9206b3dc716 2188 pipewire-setup-mx_22.10.02_all.deb
+ 3e5cccb45549a446137f2435576a91dcb9c77460651d8adfc843c73e59230c43 584 pipewire-setup-mx_22.10.03.dsc
+ e32076a215271dea7d9b0ab106dd67fa6d31e80db1831a787808adbc82578c70 2028 pipewire-setup-mx_22.10.03_all.deb
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Sun, 16 Oct 2022 10:19:01 -0400
+Build-Date: Sun, 16 Oct 2022 21:33:27 -0400
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
  usr-local-has-libraries
@@ -192,4 +192,4 @@ Installed-Build-Depends:
 Environment:
  DEB_BUILD_OPTIONS="parallel=4"
  LANG="en_US.UTF-8"
- SOURCE_DATE_EPOCH="1665929185"
+ SOURCE_DATE_EPOCH="1665970344"

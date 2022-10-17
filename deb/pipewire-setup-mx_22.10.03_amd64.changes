@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Sun, 16 Oct 2022 21:32:24 -0400
+Source: pipewire-setup-mx
+Binary: pipewire-setup-mx
+Architecture: source all
+Version: 22.10.03
+Distribution: mx
+Urgency: medium
+Maintainer: Dolphin Oracle <dolphinoracle@gmail.com>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ pipewire-setup-mx - pipewire setup for sysVinit and/or systemd
+Changes:
+ pipewire-setup-mx (22.10.03) mx; urgency=medium
+ .
+   * don't mess with init.d
+   * correct conflict statement
+Checksums-Sha1:
+ f9dcad03c98e81a92e6030085ffbf9221a5a356a 584 pipewire-setup-mx_22.10.03.dsc
+ a1fda0458bc1228df7f239105aac049c3e246857 12612 pipewire-setup-mx_22.10.03.tar.xz
+ cd8d9fff6411eae039d3241761053e91371317ef 2028 pipewire-setup-mx_22.10.03_all.deb
+ b1f5d9ee1ed093cf665be14210ffc280ac6c86e1 5729 pipewire-setup-mx_22.10.03_amd64.buildinfo
+Checksums-Sha256:
+ 3e5cccb45549a446137f2435576a91dcb9c77460651d8adfc843c73e59230c43 584 pipewire-setup-mx_22.10.03.dsc
+ df6a8213973de1bad76617101f0e684b51080e9cebd11ea8f85daa14bae236e6 12612 pipewire-setup-mx_22.10.03.tar.xz
+ e32076a215271dea7d9b0ab106dd67fa6d31e80db1831a787808adbc82578c70 2028 pipewire-setup-mx_22.10.03_all.deb
+ 8ffeeb29cf7cbad9b89b0e920a08da60815ae68aab14780025120ce130366005 5729 pipewire-setup-mx_22.10.03_amd64.buildinfo
+Files:
+ 80b63cb28947e8d44d7681b34c7e4d1f 584 system optional pipewire-setup-mx_22.10.03.dsc
+ 86ac1ee468addbd49b412f80c881c1df 12612 system optional pipewire-setup-mx_22.10.03.tar.xz
+ 5d222032c8567f4f927f4ba95247a6a2 2028 system optional pipewire-setup-mx_22.10.03_all.deb
+ 3d7fad6dcad45993cc447ab3922d97fb 5729 system optional pipewire-setup-mx_22.10.03_amd64.buildinfo
