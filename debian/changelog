@@ -1,3 +1,10 @@
+pipewire-setup-mx (22.10.03) mx; urgency=medium
+
+  * don't mess with init.d
+  * correct conflict statement 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 16 Oct 2022 21:32:24 -0400
+
 pipewire-setup-mx (22.10.02) mx; urgency=medium
 
   * add a provides pulseaudio to test removal of pulseaudio
