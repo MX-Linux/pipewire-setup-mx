@@ -1,0 +1,12 @@
+#/bin/bash
+#start wireplumber on KDE since systemd user daemon won't start
+INITCHECK=$(/usr/bin/ps -p 1 -o cmd -h)
+echo $INITCHECK
+if [ "$INITCHECK" != "/lib/systemd/systemd" ]; then 
+	exit 0
+fi
+#else start them up
+echo "start wireplumber"
+/usr/bin/wireplumber &
+
+exit 0

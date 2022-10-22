@@ -5,7 +5,6 @@ Type=Application
 Name=pipewire (sysVinit)
 Comment=pipewire (sysvinit)
 Exec=bash -c "/usr/bin/pipewire-start"
-StartupNotify=false
 Terminal=false
 Hidden=false
 
