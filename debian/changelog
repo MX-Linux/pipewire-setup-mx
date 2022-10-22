@@ -1,3 +1,9 @@
+pipewire-setup-mx (22.10.04) mx; urgency=medium
+
+  * add jack backend to depends 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 21 Oct 2022 22:11:21 -0400
+
 pipewire-setup-mx (22.10.03) mx; urgency=medium
 
   * don't mess with init.d
