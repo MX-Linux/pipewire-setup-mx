@@ -1,3 +1,10 @@
+pipewire-setup-mx (22.10.05) mx; urgency=medium
+
+  * add special kde autostart for wireplumber
+  * modify autostart desktop files to use bash -c to work with kde
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 22 Oct 2022 15:15:17 -0400
+
 pipewire-setup-mx (22.10.04) mx; urgency=medium
 
   * add jack backend to depends 
