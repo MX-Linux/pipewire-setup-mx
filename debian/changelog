@@ -1,3 +1,9 @@
+pipewire-setup-mx (22.12.01) mx; urgency=medium
+
+  * remove .conf file, now provided by pipewire-alsa 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 22 Dec 2022 21:36:14 -0500
+
 pipewire-setup-mx (22.10.05) mx; urgency=medium
 
   * add special kde autostart for wireplumber

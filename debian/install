@@ -1,4 +1,4 @@
-99-pipewire-default.conf  etc/alsa/conf.d
+#99-pipewire-default.conf  etc/alsa/conf.d
 autostart/*	etc/xdg/autostart/
 bin/*		usr/bin/
 with-alsa	usr/share/pipewire/media-session.d
