@@ -1,5 +1,13 @@
 #/bin/bash
 
+#first init check for pure systemd, no shim
+INITCHECK=$(readlink /usr/sbin/init)
+echo $INITCHECK
+if [ "$INITCHECK" = "/lib/systemd/systemd" ]; then
+        exit 0
+fi
+
+#second init check for system-shim configuration
 INITCHECK=$(/usr/bin/ps -p 1 -o cmd -h)
 echo $INITCHECK
 if [ "$INITCHECK" = "/lib/systemd/systemd" ]; then 
@@ -11,4 +19,4 @@ echo "start pipewire"
 /usr/bin/pipewire-pulse & 
 /usr/bin/wireplumber &
 
-exit 0
+exit 0s
