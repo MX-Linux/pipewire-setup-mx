@@ -19,4 +19,4 @@ echo "start pipewire"
 /usr/bin/pipewire-pulse & 
 /usr/bin/wireplumber &
 
-exit 0s
+exit 0
