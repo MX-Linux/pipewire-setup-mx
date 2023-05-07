@@ -1,6 +1,7 @@
 pipewire-setup-mx (23.05.03) mx; urgency=medium
 
   * renable wireplumber-kde autostart 
+  * check for sound servers by user
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 07 May 2023 09:41:10 -0400
 
