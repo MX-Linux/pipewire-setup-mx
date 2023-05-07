@@ -1,32 +1,36 @@
 #/bin/bash
 
-
-#try to start wireplumber all the time
-if [ -z "$(pgrep -x -u $USER wireplumber)" ]; then
-	/usr/bin/wireplumber &
-fi
+INITSKIP="false"
 
 #first init check for pure systemd, no shim
 INITCHECK=$(readlink /usr/sbin/init)
 echo $INITCHECK
 if [ "$INITCHECK" = "/lib/systemd/systemd" ]; then
-        exit 0
+        INITSKIP="true"
 fi
 
 #second init check for system-shim configuration
 INITCHECK=$(/usr/bin/ps -p 1 -o cmd -h)
 echo $INITCHECK
 if [ "$INITCHECK" = "/lib/systemd/systemd" ]; then 
-	exit 0
-fi
-#else start them up
-echo "start pipewire"
-if [ -z "$(pgrep -x -u $USER pipewire)" ]; then 
-	/usr/bin/pipewire &
-fi
-if [ -z "$(pgrep -x -u $USER pipewire-pulse)" ]; then
-	/usr/bin/pipewire-pulse & 
+	  INITSKIP="true"
 fi
 
+#else start them up
+echo "start pipewire"
+
+if [ "$INITSKIP" = "false" ]; then
+	if [ -z "$(pgrep -x -u $USER pipewire)" ]; then 
+		/usr/bin/pipewire &
+	fi
+	if [ -z "$(pgrep -x -u $USER pipewire-pulse)" ]; then
+		/usr/bin/pipewire-pulse & 
+	fi
+fi
+
+#try to start wireplumber all the time
+if [ -z "$(pgrep -x -u $USER wireplumber)" ]; then
+	/usr/bin/wireplumber &
+fi
 
 exit 0
