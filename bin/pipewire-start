@@ -1,5 +1,11 @@
 #/bin/bash
 
+
+#try to start wireplumber all the time
+if [ -z "$(pgrep -x wireplumber)" ]; then
+	/usr/bin/wireplumber &
+fi
+
 #first init check for pure systemd, no shim
 INITCHECK=$(readlink /usr/sbin/init)
 echo $INITCHECK
@@ -18,11 +24,9 @@ echo "start pipewire"
 if [ -z "$(pgrep -x pipewire)" ]; then 
 	/usr/bin/pipewire &
 fi
-if [ -z "$(pgrep -x pipewire-pulse)"; then
+if [ -z "$(pgrep -x pipewire-pulse)" ]; then
 	/usr/bin/pipewire-pulse & 
 fi
-if [ -z "$(pgrep -x wireplumber)" ]; then
-	/usr/bin/wireplumber &
-fi
 
-exit 0s
+
+exit 0
