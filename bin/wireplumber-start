@@ -5,8 +5,11 @@ echo $INITCHECK
 if [ "$INITCHECK" != "/lib/systemd/systemd" ]; then 
 	exit 0
 fi
-#else start them up
-echo "start wireplumber"
-/usr/bin/wireplumber &
+
+#try to start wireplumber all the time
+if [ -z "$(pgrep -x wireplumber)" ]; then
+    echo "start wireplumber"
+	/usr/bin/wireplumber &
+fi
 
 exit 0
