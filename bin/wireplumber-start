@@ -7,7 +7,7 @@ if [ "$INITCHECK" != "/lib/systemd/systemd" ]; then
 fi
 
 #try to start wireplumber all the time
-if [ -z "$(pgrep -x wireplumber)" ]; then
+if [ -z "$(pgrep -x -u $USER wireplumber)" ]; then
     echo "start wireplumber"
 	/usr/bin/wireplumber &
 fi
