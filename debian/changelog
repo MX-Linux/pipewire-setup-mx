@@ -1,3 +1,11 @@
+pipewire-setup-mx (23.05.04) mx; urgency=medium
+
+  * remove wireplumber-kde autostart (again)
+  * reorder sound server startup
+  * check for sound servers by user and use existing if running
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 07 May 2023 14:06:47 -0400
+
 pipewire-setup-mx (23.05.03) mx; urgency=medium
 
   * renable wireplumber-kde autostart 
