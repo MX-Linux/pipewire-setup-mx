@@ -28,11 +28,11 @@ if [ "$INITSKIP" = "false" ]; then
 	fi
 	#wireplumber doesn't always close down
 	if [ -z "$(pgrep -x -u $USER wireplumber)" ]; then
-        sleep 2
+        #sleep 2
         /usr/bin/wireplumber &
 	else
         pkill wireplumber
-        sleep 2
+        #sleep 2
         /usr/bin/wireplumber &
 	fi
 fi
