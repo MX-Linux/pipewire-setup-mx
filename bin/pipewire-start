@@ -30,11 +30,11 @@ fi
 
 #try to start wireplumber all the time
 if [ -z "$(pgrep -x -u $USER wireplumber)" ]; then
-        sleep 1
+        sleep 2
         /usr/bin/wireplumber &
 else
         pkill wireplumber
-        sleep 1
+        sleep 2
         /usr/bin/wireplumber &
 fi
 

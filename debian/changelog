@@ -1,3 +1,9 @@
+pipewire-setup-mx (23.05.07) mx; urgency=medium
+
+  * add a pause for pipewire to start before launching wireplumber
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 28 May 2023 23:19:07 -0400
+
 pipewire-setup-mx (23.05.05) mx; urgency=medium
 
   * adjust wireplumber startup
