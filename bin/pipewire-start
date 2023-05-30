@@ -32,7 +32,7 @@ if [ "$INITSKIP" = "false" ]; then
         /usr/bin/wireplumber &
 	else
         pkill wireplumber
-        #sleep 2
+        sleep 2
         /usr/bin/wireplumber &
 	fi
 fi
