@@ -1,3 +1,9 @@
+pipewire-setup-mx (23.05.10) mx; urgency=medium
+
+  * restore delay on wireplumber start (2 seconds)
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 31 May 2023 06:58:47 -0400
+
 pipewire-setup-mx (23.05.09) mx; urgency=medium
 
   * add dbus-user-session to depends (ensures operation on systemd) 
