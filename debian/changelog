@@ -1,3 +1,9 @@
+pipewire-setup-mx (23.08.01) mx; urgency=medium
+
+  * add rtkit to depends
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 08 Aug 2023 19:26:29 -0400
+
 pipewire-setup-mx (23.05.10) mx; urgency=medium
 
   * restore delay on wireplumber start (2 seconds)
