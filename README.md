@@ -1,3 +1,3 @@
-# network-manager-sysvinit-compat
+# pipewire-setup-mux
 
-sysvinit script for network-manager
+scripts and configs for launching pipewire 
