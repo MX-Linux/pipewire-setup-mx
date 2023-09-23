@@ -1,3 +1,10 @@
+pipewire-setup-mx (23.08.02) mx; urgency=medium
+
+  * make dbus-user-session a recommend
+  * in case people want to remove systemd but keep pipewire
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 22 Sep 2023 22:36:04 -0400
+
 pipewire-setup-mx (23.08.01) mx; urgency=medium
 
   * add rtkit to depends
