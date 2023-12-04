@@ -7,7 +7,7 @@ Standards-Version: 3.9.8
 
 Package: pipewire-setup-mx
 Architecture: all
-Depends: pipewire (>= 0.3.58), pipewire-alsa, pipewire-pulse, pipewire-jack, gstreamer1.0-pipewire, wireplumber, libspa-0.2-bluetooth, libspa-0.2-jack, rtkit
+Depends: pipewire (>= 1.0), pipewire-alsa, pipewire-pulse, pipewire-jack, pipewire-v4l2, gstreamer1.0-pipewire, wireplumber, libspa-0.2-bluetooth, libspa-0.2-jack, libspa-0.2-libcamera, libpipewire-0.3-modules-x11, rtkit
 Recommends: dbus-user-session
 Conflicts: pulseaudio-modules-bluetooth, pulseaudio-module-jack
 Description:  pipewire setup for sysVinit and/or systemd
