@@ -1,3 +1,10 @@
+pipewire-setup-mx (23.12.01) mx; urgency=medium
+
+  * changes for pipewire-1.0
+  * add additional depend libs
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 06 Dec 2023 20:01:43 -0500
+
 pipewire-setup-mx (23.09.01) mx; urgency=medium
 
   * make dbus-user-session a recommend
