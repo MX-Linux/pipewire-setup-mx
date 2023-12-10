@@ -1,3 +1,9 @@
+pipewire-setup-mx (23.12.02) mx; urgency=medium
+
+  * remove libpipewire-0.3-modules-x11 dependency
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 10 Dec 2023 16:08:51 -0500
+
 pipewire-setup-mx (23.12.01) mx; urgency=medium
 
   * changes for pipewire-1.0
