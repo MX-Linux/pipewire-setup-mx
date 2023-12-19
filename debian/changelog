@@ -1,3 +1,9 @@
+pipewire-setup-mx (23.12.04) mx; urgency=medium
+
+  * fix startup script shebang (reversed ! and #)
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 19 Dec 2023 12:43:12 -0500
+
 pipewire-setup-mx (23.12.03) mx; urgency=medium
 
   * update startup script shebang
