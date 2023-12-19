@@ -1,6 +1,6 @@
 pipewire-setup-mx (23.12.03) mx; urgency=medium
 
-  * update startup script 
+  * update startup script shebang
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 18 Dec 2023 19:32:50 -0500
 
