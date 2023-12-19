@@ -4,7 +4,7 @@ Version=0.9.4
 Type=Application
 Name=pipewire (sysVinit)
 Comment=pipewire (sysvinit)
-Exec=bash -c "/usr/bin/pipewire-start"
+Exec=/usr/bin/pipewire-start
 Terminal=false
 Hidden=false
 

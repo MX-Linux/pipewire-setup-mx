@@ -1,3 +1,9 @@
+pipewire-setup-mx (23.12.03) mx; urgency=medium
+
+  * update startup script 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 18 Dec 2023 19:32:50 -0500
+
 pipewire-setup-mx (23.12.02) mx; urgency=medium
 
   * remove libpipewire-0.3-modules-x11 dependency
