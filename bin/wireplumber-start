@@ -1,4 +1,4 @@
-#/bin/bash
+!#/bin/bash
 #start wireplumber on KDE since systemd user daemon won't start
 INITCHECK=$(/usr/bin/ps -p 1 -o cmd -h)
 echo $INITCHECK
