@@ -20,24 +20,21 @@ fi
 echo "start pipewire"
 
 if [ "$INITSKIP" = "false" ]; then
-	if [ -z "$(pgrep -x -u $USER pipewire)" ]; then 
-		/usr/bin/pipewire &
+	#kill existing servers per user
+	if [ -n "$(pgrep -x -u $USER pipewire)" ]; then
+		pkill -x -u $USER pipewire
 	fi
-	if [ -z "$(pgrep -x -u $USER pipewire-pulse)" ]; then
-		/usr/bin/pipewire-pulse & 
+	if [ -n "$(pgrep -x -u $USER pipewire-pulse)" ]; then
+		pkill -x -u $USER pipewire-pulse
 	fi
-	#wireplumber doesn't always close down
-	if [ -z "$(pgrep -x -u $USER wireplumber)" ]; then
-        sleep 2
-        /usr/bin/wireplumber &
-	else
-        pkill wireplumber
-        sleep 2
-        /usr/bin/wireplumber &
+	if [ -n "$(pgrep -x -u $USER wireplumber)" ]; then
+    	pkill -u $USER wireplumber
 	fi
+	#start up new servers
+	/usr/bin/pipewire &
+	/usr/bin/pipewire-pulse & 
+	sleep 2
+	/usr/bin/wireplumber &
 fi
-
-
-
 
 exit 0
