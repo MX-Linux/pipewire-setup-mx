@@ -1,9 +1,10 @@
-pipewire-setup-mx (24.06.01) mx; urgency=medium
+pipewire-setup-mx (24.06.02) mx; urgency=medium
 
   * make pipewire-start more reliable
   * also able to restart pipewire stack just by running pipewire-start from terminal
+  * remove sleep delays
 
- -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 22 Jun 2024 18:01:11 -0400
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 10 Jul 2024 19:06:39 -0400
 
 pipewire-setup-mx (23.12.04) mx; urgency=medium
 

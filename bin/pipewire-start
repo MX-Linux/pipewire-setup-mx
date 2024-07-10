@@ -31,10 +31,10 @@ if [ "$INITSKIP" = "false" ]; then
     	pkill -u $USER wireplumber
 	fi
 	#start up new servers
-	/usr/bin/pipewire &
-	/usr/bin/pipewire-pulse & 
-	sleep 2
-	/usr/bin/wireplumber &
+	/usr/bin/pipewire 2>/dev/null &
+ 	/usr/bin/pipewire-pulse &
+	/usr/bin/wireplumber 2>/dev/null &
 fi
 
 exit 0
+
