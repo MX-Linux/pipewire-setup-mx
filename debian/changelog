@@ -1,6 +1,7 @@
 pipewire-setup-mx (24.08.01) mx; urgency=medium
 
   * add configurable delay (.config/MX-Linux/pipewire-start.conf)
+  * keep existing 2 second startup delay on wireplumber as default
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 02 Sep 2024 12:35:31 -0400
 
