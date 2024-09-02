@@ -1,6 +1,12 @@
 #!/bin/bash
 
 INITSKIP="false"
+configfile="$HOME/.config/MX-Linux/pipewire-start.conf"
+if [ ! -e "$configfile" ]; then
+	echo "wireplumber_delay=2" > "$configfile"
+fi
+
+source "$configfile"
 
 #first init check for pure systemd, no shim
 INITCHECK=$(readlink /usr/sbin/init)
@@ -33,6 +39,11 @@ if [ "$INITSKIP" = "false" ]; then
 	#start up new servers
 	/usr/bin/pipewire 2>/dev/null &
  	/usr/bin/pipewire-pulse &
+ 	if [ $wireplumber_delay -ge 1 ]; then
+		echo "delay wireplumber server start $wireplumber_delay seconds"
+		echo "configurable in $configfile"
+		sleep $wireplumber_delay
+	fi
 	/usr/bin/wireplumber 2>/dev/null &
 fi
 
