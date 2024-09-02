@@ -3,7 +3,8 @@
 INITSKIP="false"
 configfile="$HOME/.config/MX-Linux/pipewire-start.conf"
 if [ ! -e "$configfile" ]; then
-	echo "wireplumber_delay=2" > "$configfile"
+	echo "#delay wireplumber session manager to give pipewire time to settle before launch" > "$configfile"
+	echo "wireplumber_delay=2" >> "$configfile"
 fi
 
 source "$configfile"
@@ -39,7 +40,8 @@ if [ "$INITSKIP" = "false" ]; then
 	#start up new servers
 	/usr/bin/pipewire 2>/dev/null &
  	/usr/bin/pipewire-pulse &
- 	if [ $wireplumber_delay -ge 1 ]; then
+ 	#ignore config file value if not a postive non-zero number
+ 	if [ $wireplumber_delay -gt 0 ]; then
 		echo "delay wireplumber server start $wireplumber_delay seconds"
 		echo "configurable in $configfile"
 		sleep $wireplumber_delay
