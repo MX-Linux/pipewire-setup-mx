@@ -41,7 +41,8 @@ if [ "$INITSKIP" = "false" ]; then
 	/usr/bin/pipewire 2>/dev/null &
  	/usr/bin/pipewire-pulse &
  	#ignore config file value if not a postive non-zero number
- 	if [ $wireplumber_delay -gt 0 ]; then
+ 	check=$(echo "$wireplumber_delay>0" | bc -l)
+ 	if [ $check == 1 ]; then
 		echo "delay wireplumber server start $wireplumber_delay seconds"
 		echo "configurable in $configfile"
 		sleep $wireplumber_delay
