@@ -25,10 +25,10 @@ if [ "$INITSKIP" = "false" ]; then
 		INITSKIP="true"
 	fi
 fi
-#else start them up
-echo "not systemd, start pipewire"
 
 if [ "$INITSKIP" = "false" ]; then
+	#start them up
+	echo "not systemd, start pipewire"
 	#kill existing servers per user
 	if [ -n "$(pgrep -x -u $USER pipewire)" ]; then
 		pkill -x -u $USER pipewire
@@ -50,6 +50,8 @@ if [ "$INITSKIP" = "false" ]; then
 		sleep $wireplumber_delay
 	fi
 	/usr/bin/wireplumber 2>/dev/null &
+else 
+	echo "systemd detected, systemd will start pipewire"
 fi
 
 exit 0
