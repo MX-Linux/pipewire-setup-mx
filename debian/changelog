@@ -1,3 +1,10 @@
+pipewire-setup-mx (25.03.01) mx; urgency=medium
+
+  * pipewire-start modification
+  * changes to heuristic for detecting systemd
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 01 Mar 2025 20:20:44 -0500
+
 pipewire-setup-mx (24.08.01) mx; urgency=medium
 
   * add configurable delay (.config/MX-Linux/pipewire-start.conf)

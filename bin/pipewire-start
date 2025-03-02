@@ -11,20 +11,22 @@ source "$configfile"
 
 #first init check for pure systemd, no shim
 INITCHECK=$(readlink /usr/sbin/init)
-echo $INITCHECK
-if [ "$INITCHECK" = "/lib/systemd/systemd" ]; then
+echo "pipewire-start first initcheck $INITCHECK"
+if [[ "$INITCHECK" =~ "/lib/systemd/systemd" ]]; then
         INITSKIP="true"
 fi
 
 #second init check for system-shim configuration
-INITCHECK=$(/usr/bin/ps -p 1 -o cmd -h)
-echo $INITCHECK
-if [ "$INITCHECK" = "/lib/systemd/systemd" ]; then 
-	  INITSKIP="true"
+#only if init skip is still false
+if [ "$INITSKIP" = "false" ]; then
+	INITCHECK=$(/usr/bin/ps -p 1 -o cmd -h)
+	echo "pipewire-start second initcheck $INITCHECK"
+	if [[ "$INITCHECK" =~ "/lib/systemd/systemd" ]]; then 
+		INITSKIP="true"
+	fi
 fi
-
 #else start them up
-echo "start pipewire"
+echo "not systemd, start pipewire"
 
 if [ "$INITSKIP" = "false" ]; then
 	#kill existing servers per user
