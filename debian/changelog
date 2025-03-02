@@ -2,6 +2,7 @@ pipewire-setup-mx (25.03.01) mx; urgency=medium
 
   * pipewire-start modification
   * changes to heuristic for detecting systemd
+  * clean up messages 
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 01 Mar 2025 20:20:44 -0500
 
