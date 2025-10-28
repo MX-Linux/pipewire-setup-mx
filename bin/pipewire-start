@@ -9,21 +9,9 @@ fi
 
 source "$configfile"
 
-#first init check for pure systemd, no shim
-INITCHECK=$(readlink /usr/sbin/init)
-echo "pipewire-start first initcheck $INITCHECK"
-if [[ "$INITCHECK" =~ "/lib/systemd/systemd" ]]; then
+#init check for systemd
+if [ -d /run/systemd/system ]; then
         INITSKIP="true"
-fi
-
-#second init check for system-shim configuration
-#only if init skip is still false
-if [ "$INITSKIP" = "false" ]; then
-	INITCHECK=$(/usr/bin/ps -p 1 -o cmd -h)
-	echo "pipewire-start second initcheck $INITCHECK"
-	if [[ "$INITCHECK" =~ "/lib/systemd/systemd" ]]; then 
-		INITSKIP="true"
-	fi
 fi
 
 if [ "$INITSKIP" = "false" ]; then
