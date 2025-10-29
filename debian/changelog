@@ -1,3 +1,9 @@
+pipewire-setup-mx (25.10.01) mx; urgency=medium
+
+  * simplify systemd detection
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 28 Oct 2025 20:15:33 -0400
+
 pipewire-setup-mx (25.03.01) mx; urgency=medium
 
   * pipewire-start modification
